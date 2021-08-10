@@ -1,0 +1,27 @@
+html
+head
+    title Form
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet")
+body
+    div.container
+        .card(style = "margin-top: 5%;")
+            h3.card-header Shopping
+            .card-body
+                form(action="/", method="post", enctype="multipart/form-data")
+                    .form-group
+                        .card-header                           
+                            span Orange 
+                            span 2$
+                            input(type= "number", required, name= "orange")
+                    .form-group
+                        .card-header                           
+                            span Apple 
+                            span 5$
+                            input(type= "number", required).form-group
+                        .card-header                           
+                            span Mango 
+                            span 4$
+                            input(type= "number", required)
+                    
+                    button.btn.btn-block.btn-success(type="submit") Buy
